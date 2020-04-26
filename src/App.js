@@ -1,5 +1,6 @@
 
 import React from 'react'
+import "./index.css"
 
 const SailplaneLanding = React.lazy(() => import('./components/sailplaneLanding'))
 const SailplaneApp = React.lazy(() => import('./components/sailplaneApp'))
