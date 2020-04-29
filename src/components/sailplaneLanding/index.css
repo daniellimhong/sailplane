@@ -1,0 +1,38 @@
+.landing-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-title-container{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.landing-footer-container{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.landing-footer-container{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.landing-footer-title{
+  padding-bottom: 30px;
+}
+
+.landing-background{
+  height: 700px;
+}
+
+.landing-launch-button{
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+

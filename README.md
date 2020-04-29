@@ -1,3 +1,6 @@
+do window.localStorage.setItem('currentComponent', 'app') in console and reload
+to checkout the app skeleton or window.localStorage.setItem('currentComponent', 'landing') to see the landing page
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
