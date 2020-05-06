@@ -1,9 +1,9 @@
 
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import Drawer from '../drawer'
-import Bar from '../bar'
-import Content from '../content'
+import Drawer from '../Drawer'
+import Bar from '../Bar'
+import Content from '../Content'
 
 const useStyles = makeStyles(theme => ({
   root: {
