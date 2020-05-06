@@ -7,11 +7,12 @@ const SailplaneApp = React.lazy(() => import('./components/sailplaneApp'))
 
 const currentComponent = 'currentComponent'
 const landing = 'landing'
+const app = 'app'
 
 function App () {
   if (
     window.localStorage.getItem(currentComponent) !== landing &&
-    window.localStorage.getItem(currentComponent) !== 'app'
+    window.localStorage.getItem(currentComponent) !== app
   ) {
     window.localStorage.setItem(currentComponent, landing)
   }
