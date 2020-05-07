@@ -21,12 +21,12 @@ function Content () {
   const classes = useStyles()
 
   return (
-    <>
+    <div className={classes.root}>
       <div className={classes.toolbar} />
       <div className={classes.contentWrap}>
         <FileExplorer />
       </div>
-    </>
+    </div>
   )
 }
 
