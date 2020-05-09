@@ -2,10 +2,11 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
+import { connect } from 'react-redux'
+import { reposSelectors } from '../../state'
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
     height: '100%'
   },
   toolbar: theme.mixins.toolbar,
@@ -16,17 +17,24 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-function Content () {
+function FileExplorer (props) {
   const classes = useStyles()
 
+  console.log(props)
+
   return (
-    <>
-      <div className={classes.toolbar} />
-      <div className={classes.contentWrap}>
-        {/* content goes here */}
-      </div>
-    </>
+    <div className={classes.root}>
+      {/* FileExplorer UI goes here */}
+    </div>
   )
 }
 
-export default Content
+const mapStateToProps = s => {
+  return {
+    fs: reposSelectors.fs(s)
+  }
+}
+
+export default connect(
+  mapStateToProps
+)(FileExplorer)

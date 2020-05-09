@@ -2,16 +2,17 @@
 import React from 'react'
 import "./index.css"
 
-const SailplaneLanding = React.lazy(() => import('./components/sailplaneLanding'))
-const SailplaneApp = React.lazy(() => import('./components/sailplaneApp'))
+const SailplaneLanding = React.lazy(() => import('./components/SailplaneLanding'))
+const SailplaneApp = React.lazy(() => import('./components/SailplaneApp'))
 
 const currentComponent = 'currentComponent'
 const landing = 'landing'
+const app = 'app'
 
 function App () {
   if (
     window.localStorage.getItem(currentComponent) !== landing &&
-    window.localStorage.getItem(currentComponent) !== 'app'
+    window.localStorage.getItem(currentComponent) !== app
   ) {
     window.localStorage.setItem(currentComponent, landing)
   }
